@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#gameArea {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #a0a0a0;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+#character {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#weapon {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    visibility: hidden;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:active {
+    background-color: #777;
+}
